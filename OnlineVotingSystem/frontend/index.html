@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Voting</title>
+</head>
+<body>
+  <h2>Cast Your Vote for CR </h2>
+  <form action="../backend/vote.php" method="POST">
+    <label>Voter ID:</label><br>
+    <input type="number" name="voter_id" required><br><br>
+
+    <label>Vote Choice:</label><br>
+    <select name="vote_choice" required>
+      <option value="Candidate A">Candidate A</option>
+      <option value="Candidate B">Candidate B</option>
+      <option value="Candidate C">Candidate C</option>
+    </select><br><br>
+
+    <button type="submit">Cast Vote</button>
+  </form>
+</body>
+</html>
